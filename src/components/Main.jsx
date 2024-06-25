@@ -1,12 +1,13 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import bgIMG from '../assets/bg-en2c.png'
 
 const Main = () => {
   return (
     <div id='main' className='relative w-full h-screen'>
       {/* Background Image Layer with Fade-out Effect */}
-      <div className='absolute w-full h-full top-0 left-0 bg-cover bg-center fade-out' style={{ backgroundImage: "url('src/assets/bg-en2c.png')" }}></div>
+      <div className='absolute w-full h-full top-0 left-0 bg-cover bg-center fade-out' style={{ backgroundImage: `url(${bgIMG})` }}></div>
       
       {/* Overlay Layer */}
       <div className='absolute w-full h-full top-0 left-0'></div>
